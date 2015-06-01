@@ -4,7 +4,7 @@ A Head Up Display plugin for print statements and console logs.
 
 ## Installation
 
-Simply place quickerticker.js on your page.
+Simply place outlet.js on your page.
 
     <script src="path/to/outlet.js" type="text/javascript"></script>
 
@@ -21,6 +21,10 @@ To use simply call:
 Outlet supports naming a particular print statement so subsequent calls will update that line instead of appending a new line:
 
     Outlet.print("Hello World!", "general-messages");
+    
+This is especially useful for preventing many unneccessary print lines from being created on certain type of debugger statements, like mouse movement:
+
+(http://i.imgur.com/6OxxLnN.gif?1)
 
 ## Methods
 
