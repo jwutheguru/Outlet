@@ -24,6 +24,7 @@ Outlet supports naming a particular print statement so subsequent calls will upd
     
 This is especially useful for preventing many unneccessary print lines from being created on certain type of debugger statements, like mouse movement:
 
+![Image of Outlet named print statement]
 (http://i.imgur.com/6OxxLnN.gif?1)
 
 ## Methods
