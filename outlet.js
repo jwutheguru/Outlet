@@ -115,13 +115,6 @@
         outletPanel.style.display = '';
     }
 
-    /**
-     * Outlet plugin noConflict.
-     */
-    function noConflict() {
-        return this;
-    }
-
     // Public methods
     return {
         print: print,
