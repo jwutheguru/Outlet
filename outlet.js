@@ -10,7 +10,7 @@
 !function(global) {
     'use strict';
 
-    var previousOutlet = global.Outlet;
+    var previousOutlet = global.Outlet; // for noConflict();
 
     var Outlet = (function(window, document, undefined) {
         var outletPanel = document.getElementById('#js-outlet') || createOutletPanel();
@@ -131,6 +131,11 @@
 
     })(window, document);
 
+    /**
+     * noConflict() method for preventing name collision.
+     * Restores previous definition of "Outlet" and assign this "Outlet" module to a different variable name.
+     * @return {object} The Outlet module
+     */
     Outlet.noConflict = function noConflict() {
         global.Outlet = previousOutlet;
         return Outlet;
