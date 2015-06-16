@@ -125,8 +125,7 @@
             resume: resume,
             clear: clear,
             hide: hide,
-            show: show,
-            noConflict: noConflict
+            show: show
         };
 
     })(window, document);
